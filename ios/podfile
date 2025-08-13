@@ -1,12 +1,17 @@
+# This is a Flutter-generated file.
+# It is not intended for manual editing.
+# It is used to generate the Podfile.lock file.
+
+flutter_application_path = File.expand_path('..', __dir__)
+load File.join(flutter_application_path, '.flutter-plugins')
+
 # Uncomment this line to define a global platform for your project
 platform :ios, '13.0'
 
-# A Podfile template that automatically includes all Flutter plugins
-
+# Pods for Flutter
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
-  # Pods for plugins
-  flutter_install_all_ios_pods
+  flutter_install_all_ios_pods flutter_application_path
 end
