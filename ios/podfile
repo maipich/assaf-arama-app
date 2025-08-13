@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '13.0'
+
+# Add a Flutter entry in your Podfile, so Flutter can find your pods
+flutter_install_all_ios_pods File.join(File.dirname(__FILE__), '.ios', 'Flutter')
+
+# Add your own Pods here
+target 'Runner' do
+  use_frameworks!
+  use_modular_headers!
+
+  # Pods for Flutter plugins.
+  # To make Flutter work with CocoaPods, please add the lines below.
+  # Then, run 'pod install' to install the pods.
+  # The plugins you use in your app, like firebase_core, will be added here.
+
+  # Pods for plugins.
+  pod 'firebase_core', '~> 11.15.0'
+  pod 'firebase_messaging', '~> 11.15.0'
+end
