@@ -1,0 +1,45 @@
+name: assaf_arma_reports
+description: "קבוצת הדיווחים של אסף ארמה - אפליקציית דיווחים ו-Push לפי קטגוריות"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Firebase (כבוי כברירת מחדל עד הוספת קבצי קונפיגורציה)
+  firebase_core: ^3.5.0
+  firebase_messaging: ^15.0.3
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+
+# הגדרות הפקת אייקונים (לאחר החלפת הלוגו, להפעיל: flutter pub run flutter_launcher_icons)
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  remove_alpha_ios: true
+
+# מסך פתיחה (לאחר החלפת לוגו אפשר להפעיל: dart run flutter_native_splash:create)
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logo.png
+  android: true
+  ios: true
+  android_12:
+    color: "#FFFFFF"
+    image: assets/logo.png
